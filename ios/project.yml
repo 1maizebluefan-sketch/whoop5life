@@ -1,6 +1,6 @@
 name: OpenWhoop
 options:
-  bundleIdPrefix: com.openwhoop
+  bundleIdPrefix: com.daytadtrap
   deploymentTarget:
     iOS: "16.0"
   createIntermediateGroups: true
@@ -20,13 +20,13 @@ targets:
     info:
       path: OpenWhoop/Info.plist
       properties:
-        CFBundleDisplayName: OpenWhoop
+        CFBundleDisplayName: daytadtrap
         UILaunchScreen: {}
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         NSBluetoothAlwaysUsageDescription: >-
-          OpenWhoop connects to your WHOOP device over Bluetooth to read heart rate,
-          R-R intervals, battery, and sensor data locally on your device.
+          daytadtrap connects to your compatible wearable over Bluetooth to read
+          heart rate, R-R intervals, battery, and sensor data locally on your device.
         UIBackgroundModes:
           - bluetooth-central
         WHOOP_BASE_URL: $(WHOOP_BASE_URL)
