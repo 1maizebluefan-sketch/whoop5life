@@ -1,5 +1,5 @@
 import XCTest
-@testable import OpenWhoop
+@testable import LifeStrap
 
 final class BackfillPolicyTests: XCTestCase {
     func testNeverSyncedAlwaysRuns() {

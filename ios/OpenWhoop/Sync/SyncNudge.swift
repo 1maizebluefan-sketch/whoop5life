@@ -18,8 +18,8 @@ enum SyncNudge {
         let center = UNUserNotificationCenter.current()
         center.removePendingNotificationRequests(withIdentifiers: [id])
         let content = UNMutableNotificationContent()
-        content.title = "OpenWhoop hasn't synced in a while"
-        content.body = "Open OpenWhoop to catch up your WHOOP data."
+        content.title = "LifeStrap hasn't synced in a while"
+        content.body = "Open LifeStrap to catch up your wearable data."
         content.sound = .default
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: afterSeconds, repeats: false)
         center.add(UNNotificationRequest(identifier: id, content: content, trigger: trigger))

@@ -1,4 +1,4 @@
-appId: com.openwhoop.OpenWhoop
+appId: com.lifestrap.LifeStrap
 ---
 # Flow 2: Today tab → Day Strain metric detail → back
 # Verifies: Strain card tappable, MetricDetailView for strain renders

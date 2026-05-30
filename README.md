@@ -1,4 +1,4 @@
-# Wearable
+# LifeStrap
 
 Open-source, local-first client for **WHOOP 4.0**, with early **WHOOP 5.0 / MG / Life**
 standard-BLE support: read **your own** biometrics from

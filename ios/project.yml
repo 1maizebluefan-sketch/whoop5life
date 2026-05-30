@@ -1,6 +1,6 @@
-name: OpenWhoop
+name: LifeStrap
 options:
-  bundleIdPrefix: com.daytadtrap
+  bundleIdPrefix: com.lifestrap
   deploymentTarget:
     iOS: "16.0"
   createIntermediateGroups: true
@@ -10,7 +10,7 @@ packages:
   WhoopStore:
     path: ../Packages/WhoopStore
 targets:
-  OpenWhoop:
+  LifeStrap:
     type: application
     platform: iOS
     sources: [OpenWhoop]
@@ -20,12 +20,12 @@ targets:
     info:
       path: OpenWhoop/Info.plist
       properties:
-        CFBundleDisplayName: daytadtrap
+        CFBundleDisplayName: LifeStrap
         UILaunchScreen: {}
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         NSBluetoothAlwaysUsageDescription: >-
-          daytadtrap connects to your compatible wearable over Bluetooth to read
+          LifeStrap connects to your compatible wearable over Bluetooth to read
           heart rate, R-R intervals, battery, and sensor data locally on your device.
         UIBackgroundModes:
           - bluetooth-central
@@ -46,7 +46,7 @@ targets:
     platform: iOS
     sources: [OpenWhoopTests]
     dependencies:
-      - target: OpenWhoop
+      - target: LifeStrap
       - package: WhoopProtocol
       - package: WhoopStore
     settings:

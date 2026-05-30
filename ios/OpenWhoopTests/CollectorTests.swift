@@ -1,7 +1,7 @@
 import XCTest
 import WhoopProtocol
 import WhoopStore
-@testable import OpenWhoop
+@testable import LifeStrap
 
 @MainActor
 final class CollectorTests: XCTestCase {

@@ -20,7 +20,7 @@ public final class BLEManager: NSObject, ObservableObject {
     static let batteryService   = CBUUID(string: "180F")
     static let batteryChar      = CBUUID(string: "2A19")
 
-    static let restoreID = "com.openwhoop.ble.central"
+    static let restoreID = "com.lifestrap.ble.central"
 
     // MARK: Published state
     public let state: LiveState

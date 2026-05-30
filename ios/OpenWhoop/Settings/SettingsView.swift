@@ -57,7 +57,7 @@ enum ProfileUnits {
 // MARK: - Local persistence
 
 private enum ProfileStorage {
-    static let key = "com.openwhoop.profile.v1"
+    static let key = "com.lifestrap.profile.v1"
 
     static func load() -> Profile? {
         guard let data = UserDefaults.standard.data(forKey: key),

@@ -1,6 +1,6 @@
 import XCTest
 import WhoopProtocol
-@testable import OpenWhoop
+@testable import LifeStrap
 
 /// Unit tests for M6 alarm commands — the sim-verifiable gate.
 ///

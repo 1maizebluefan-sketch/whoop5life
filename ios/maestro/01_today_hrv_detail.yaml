@@ -1,4 +1,4 @@
-appId: com.openwhoop.OpenWhoop
+appId: com.lifestrap.LifeStrap
 ---
 # Flow 1: Today tab → HRV metric detail → range change → back
 # Verifies: Today loads, HRV card is tappable, MetricDetailView renders with range picker & stats

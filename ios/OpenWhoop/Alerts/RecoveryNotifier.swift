@@ -10,7 +10,7 @@ import UserNotifications
 /// requestAuthorization + stable notification identifier so re-fires replace rather
 /// than stack.
 enum RecoveryNotifier {
-    private static let lastNotifiedKey = "com.openwhoop.recoveryNotifier.lastNotifiedDay"
+    private static let lastNotifiedKey = "com.lifestrap.recoveryNotifier.lastNotifiedDay"
     /// Stable identifier so a repeat request replaces the previous one (no stacking).
     private static let notificationId = "recovery-ready-daily"
 

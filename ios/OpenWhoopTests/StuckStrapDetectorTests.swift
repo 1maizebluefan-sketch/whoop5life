@@ -1,5 +1,5 @@
 import XCTest
-@testable import OpenWhoop
+@testable import LifeStrap
 
 final class StuckStrapDetectorTests: XCTestCase {
     private func make() -> StuckStrapDetector { StuckStrapDetector(stuckAfterSeconds: 600, behindGapSeconds: 300) }

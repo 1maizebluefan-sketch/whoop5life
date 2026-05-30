@@ -1,4 +1,4 @@
-appId: com.openwhoop.OpenWhoop
+appId: com.lifestrap.LifeStrap
 ---
 # Utility sub-flow: dismiss iOS notification permission alert if present
 - runFlow:

@@ -1,4 +1,4 @@
-appId: com.openwhoop.OpenWhoop
+appId: com.lifestrap.LifeStrap
 ---
 # Flow 3: Trends tab — range change, Heart Rate card, HeartRateDetailView with range change
 # Verifies: Trends loads with chart cards, range picker works, HR card pushes detail view

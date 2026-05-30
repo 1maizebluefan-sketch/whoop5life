@@ -41,12 +41,12 @@ jobs:
         working-directory: ios
         run: xcodegen generate
 
-      - name: Build OpenWhoop
+      - name: Build LifeStrap
         working-directory: ios
         run: >
           xcodebuild
-          -project OpenWhoop.xcodeproj
-          -scheme OpenWhoop
+          -project LifeStrap.xcodeproj
+          -scheme LifeStrap
           -destination 'generic/platform=iOS'
           CODE_SIGNING_ALLOWED=NO
           build

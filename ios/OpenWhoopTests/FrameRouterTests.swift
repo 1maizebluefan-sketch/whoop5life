@@ -1,6 +1,6 @@
 import XCTest
 import WhoopProtocol
-@testable import OpenWhoop
+@testable import LifeStrap
 
 final class FrameRouterTests: XCTestCase {
 

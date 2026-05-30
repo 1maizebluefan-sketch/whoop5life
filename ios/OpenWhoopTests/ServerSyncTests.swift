@@ -1,7 +1,7 @@
 import XCTest
 import WhoopProtocol
 import WhoopStore
-@testable import OpenWhoop
+@testable import LifeStrap
 
 /// Mirror of UploaderTests but for the pull path: a stubbed URLSession (StubURLProtocol, defined
 /// in UploaderTests.swift) + in-memory WhoopStore. Asserts pulled rows are upserted, the

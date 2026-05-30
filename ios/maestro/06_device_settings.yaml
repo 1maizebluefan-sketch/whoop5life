@@ -1,4 +1,4 @@
-appId: com.openwhoop.OpenWhoop
+appId: com.lifestrap.LifeStrap
 ---
 # Flow 6: Device tab → Body Profile & Settings sheet → verify Unit System
 # Verifies: Device tab renders, settings card is tappable, SettingsView opens with Unit System

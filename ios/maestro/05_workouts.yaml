@@ -1,4 +1,4 @@
-appId: com.openwhoop.OpenWhoop
+appId: com.lifestrap.LifeStrap
 ---
 # Flow 5: Workouts tab — list, tap first row, WorkoutDetailView
 # Verifies: Workout list renders, detail view shows HR Zones + PEAK HR

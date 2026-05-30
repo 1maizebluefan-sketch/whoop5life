@@ -1,6 +1,6 @@
 import XCTest
 import UserNotifications
-@testable import OpenWhoop
+@testable import LifeStrap
 
 /// Tests the per-day dedupe logic of RecoveryNotifier.
 /// We inject an isolated UserDefaults suite and a spy UNUserNotificationCenter substitute
@@ -9,7 +9,7 @@ final class RecoveryNotifierTests: XCTestCase {
 
     // A unique UserDefaults suite per test so state doesn't bleed between cases.
     private var defaults: UserDefaults!
-    private let suiteName = "com.openwhoop.test.recoverynotifier"
+    private let suiteName = "com.lifestrap.test.recoverynotifier"
 
     override func setUp() {
         super.setUp()
@@ -26,7 +26,7 @@ final class RecoveryNotifierTests: XCTestCase {
 
     func test_firstCall_setsLastNotifiedDay() {
         RecoveryNotifier.notify(recovery: 0.64, forDay: "2026-05-28", defaults: defaults)
-        XCTAssertEqual(defaults.string(forKey: "com.openwhoop.recoveryNotifier.lastNotifiedDay"),
+        XCTAssertEqual(defaults.string(forKey: "com.lifestrap.recoveryNotifier.lastNotifiedDay"),
                        "2026-05-28",
                        "notify must stamp the day key on first fire")
     }
@@ -36,24 +36,24 @@ final class RecoveryNotifierTests: XCTestCase {
         RecoveryNotifier.notify(recovery: 0.64, forDay: "2026-05-28", defaults: defaults)
 
         // Manually confirm it's stamped before the second call.
-        XCTAssertEqual(defaults.string(forKey: "com.openwhoop.recoveryNotifier.lastNotifiedDay"),
+        XCTAssertEqual(defaults.string(forKey: "com.lifestrap.recoveryNotifier.lastNotifiedDay"),
                        "2026-05-28")
 
         // Second call with the SAME day — the guard returns early, day key must stay the same.
         RecoveryNotifier.notify(recovery: 0.80, forDay: "2026-05-28", defaults: defaults)
-        XCTAssertEqual(defaults.string(forKey: "com.openwhoop.recoveryNotifier.lastNotifiedDay"),
+        XCTAssertEqual(defaults.string(forKey: "com.lifestrap.recoveryNotifier.lastNotifiedDay"),
                        "2026-05-28",
                        "day key must not change on a duplicate same-day call")
     }
 
     func test_nextDay_fires() {
         // Seed yesterday's stamp.
-        defaults.set("2026-05-27", forKey: "com.openwhoop.recoveryNotifier.lastNotifiedDay")
+        defaults.set("2026-05-27", forKey: "com.lifestrap.recoveryNotifier.lastNotifiedDay")
 
         // Call for today — a different day, so it should fire and update the stamp.
         RecoveryNotifier.notify(recovery: 0.72, forDay: "2026-05-28", defaults: defaults)
 
-        XCTAssertEqual(defaults.string(forKey: "com.openwhoop.recoveryNotifier.lastNotifiedDay"),
+        XCTAssertEqual(defaults.string(forKey: "com.lifestrap.recoveryNotifier.lastNotifiedDay"),
                        "2026-05-28",
                        "a new calendar day must update the stamp")
     }
@@ -61,7 +61,7 @@ final class RecoveryNotifierTests: XCTestCase {
     func test_noPriorStamp_fires() {
         // No prior key → notify should run (and stamp the day).
         RecoveryNotifier.notify(recovery: 0.50, forDay: "2026-05-28", defaults: defaults)
-        XCTAssertEqual(defaults.string(forKey: "com.openwhoop.recoveryNotifier.lastNotifiedDay"),
+        XCTAssertEqual(defaults.string(forKey: "com.lifestrap.recoveryNotifier.lastNotifiedDay"),
                        "2026-05-28")
     }
 }

@@ -1,5 +1,5 @@
 import XCTest
-@testable import OpenWhoop
+@testable import LifeStrap
 
 /// Unit tests for the pure battery-alert crossing logic. The tricky parts are edge-triggering
 /// (fire once on the way down, not repeatedly), re-arming after a charge, the no-prior-reading

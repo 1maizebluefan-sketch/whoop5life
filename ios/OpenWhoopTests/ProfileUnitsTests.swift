@@ -1,5 +1,5 @@
 import XCTest
-@testable import OpenWhoop
+@testable import LifeStrap
 
 /// Unit tests for ProfileUnits imperial ↔ metric conversion helpers.
 /// These are pure math functions with no I/O, so no stubs needed.

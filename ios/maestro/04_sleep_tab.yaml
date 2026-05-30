@@ -1,4 +1,4 @@
-appId: com.openwhoop.OpenWhoop
+appId: com.lifestrap.LifeStrap
 ---
 # Flow 4: Sleep tab — hypnogram, 7-night chart, Smart Alarm card
 # Verifies: Sleep tab renders correctly with stage data, 7-night chart, alarm entry point

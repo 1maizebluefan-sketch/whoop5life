@@ -1,6 +1,6 @@
 import XCTest
 import WhoopStore
-@testable import OpenWhoop
+@testable import LifeStrap
 
 @MainActor
 final class MetricsRepositoryTests: XCTestCase {

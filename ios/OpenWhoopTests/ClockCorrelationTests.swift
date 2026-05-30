@@ -1,7 +1,7 @@
 import XCTest
 import WhoopProtocol
 import WhoopStore
-@testable import OpenWhoop
+@testable import LifeStrap
 
 final class ClockCorrelationTests: XCTestCase {
 

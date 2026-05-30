@@ -1,6 +1,6 @@
 import XCTest
 import WhoopProtocol
-@testable import OpenWhoop
+@testable import LifeStrap
 
 /// Unit tests for the type-47 high-freq-sync handshake pieces that are testable WITHOUT a live
 /// CoreBluetooth peripheral. The full ordered command-emission path runs through `send()`, which

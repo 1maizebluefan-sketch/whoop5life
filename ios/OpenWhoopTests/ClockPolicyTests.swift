@@ -1,5 +1,5 @@
 import XCTest
-@testable import OpenWhoop
+@testable import LifeStrap
 
 final class ClockPolicyTests: XCTestCase {
     // In-sync clock (within threshold) → don't set.
